@@ -6,6 +6,10 @@ android {
     namespace = "com.example.tictactoe"
     compileSdk = 34
 
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+
     defaultConfig {
         applicationId = "com.example.tictactoe"
         minSdk = 24

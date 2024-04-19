@@ -14,9 +14,13 @@ import androidx.annotation.Nullable;
 
 public class ResultDialog extends Dialog {
 
-    private final String message;
-    private final MainActivity mainActivity;
+    private String message;
+    private MainActivity mainActivity;
+    Context context;
 
+//    public ResultDialog(Context context) {
+//        super(context);
+//    }
     public ResultDialog(@NonNull Context context, String message, MainActivity mainActivity) {
         super(context);
         this.message = message;
